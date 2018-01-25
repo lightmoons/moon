@@ -1,0 +1,15 @@
+//1.26  by moon
+#include<stdio.h>
+
+int main()
+{
+	long long int n,m;
+	double s;
+	while(scanf("%lld%lld",&n,&m)==2&&n&&m){
+		s=0;
+		for(;n<=m;n++)
+		s+=1.0/(n*n);
+		printf("%.5f\n",s);
+	}
+	
+}
