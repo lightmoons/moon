@@ -1,0 +1,27 @@
+1.//1.30-开灯问题
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a[1000]={0};
+	int b[1000]={0};
+	int n,k;
+
+	cin >>n;
+	cin >>k;
+	for(int i=0;i<n;i++){
+		a[i]=i+1;
+	} 
+	for(int i=1;i<=k;i++){
+		for(int j=0;j<n;j++){
+			if(a[j]%i==0){
+				if(b[j]==0)b[j]=1;
+				else b[j]=0;
+			}
+		}
+	}
+	for(int i=0;i<n;i++){
+		if(b[i]==1)cout <<a[i`] <<' ';//多输出了空格哦
+	}
+ } //建立一个新数组，浪费空间
